@@ -7,7 +7,7 @@
 static LoggerConfig g_logger = {
     .level = LOG_LEVEL_INFO,
     .stream = NULL,
-    .filename = "/var/log/storage/output.log",
+    .filename = "",
     .max_size = 0,
     .backup_count = 0,
     .mutex = PTHREAD_MUTEX_INITIALIZER

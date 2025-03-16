@@ -2,7 +2,7 @@
 
 int main() {        // 程序入口函数
     printf("Hello, World!\n");  // 输出字符串并换行
-    log_init(NULL, 0, 0);
+    log_init("/var/log/storage/output.log", 0, 0);
     log_set_level(LOG_LEVEL_DEBUG);
 
     LOG_DEBUG("Starting application");
