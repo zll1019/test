@@ -10,7 +10,6 @@ int main() {        // 程序入口函数
 
     module_init();
     
-
     LOG_DEBUG("Starting application");
     LOG_INFO("Initialized %d modules", 5);
     LOG_WARNING("Low memory: %.2f MB free", 12.5);

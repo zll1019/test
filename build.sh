@@ -26,4 +26,5 @@ echo -e "${CYAN}   ./build/mian${NC}"
 
 # 自动运行程序（如需取消自动运行，删除以下三行）
 echo -e "\n${CYAN}🔄 自动运行程序...${NC}"
+cowsay "hello 玲玲"
 ./main
