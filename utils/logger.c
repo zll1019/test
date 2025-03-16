@@ -50,7 +50,7 @@ static void check_file_size() {
     }
 }
 
-void log_init(const char* filename, size_t max_size, int backup_count) {
+void log_init(const char* filename, size_t max_size, int backup_count, LogLevel level) {
     pthread_mutex_lock(&g_logger.mutex);
     
     if (filename) {
@@ -62,13 +62,8 @@ void log_init(const char* filename, size_t max_size, int backup_count) {
     
     g_logger.max_size = max_size;
     g_logger.backup_count = backup_count;
-    
-    pthread_mutex_unlock(&g_logger.mutex);
-}
-
-void log_set_level(LogLevel level) {
-    pthread_mutex_lock(&g_logger.mutex);
     g_logger.level = level;
+    
     pthread_mutex_unlock(&g_logger.mutex);
 }
 

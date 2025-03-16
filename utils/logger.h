@@ -26,10 +26,7 @@ typedef struct {
 } LoggerConfig;
 
 // 初始化日志系统
-void log_init(const char* filename, size_t max_size, int backup_count);
-
-// 设置日志级别
-void log_set_level(LogLevel level);
+void log_init(const char* filename, size_t max_size, int backup_count, LogLevel level);
 
 // 核心日志函数
 void log_write(LogLevel level, const char* file, int line, const char* format, ...);
