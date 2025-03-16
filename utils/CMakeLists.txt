@@ -1,6 +1,6 @@
 # 定义工具库的源代码和头文件
 set(UTILS_SOURCES
-    utils.c
+    logger.c
     # 可添加其他工具文件，如 other.c
 )
 
