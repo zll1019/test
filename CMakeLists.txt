@@ -1,0 +1,10 @@
+# 设置CMake最低版本要求
+cmake_minimum_required(VERSION 3.10)
+
+# 定义项目名称和版本（可自定义）
+project(HelloWorld VERSION 1.0)
+
+# 添加可执行文件
+add_executable(main
+    main.c  # 你的源代码文件名
+)
