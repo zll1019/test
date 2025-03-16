@@ -10,7 +10,6 @@ add_subdirectory(utils)
 # 添加可执行文件
 add_executable(main
     main.c  # 你的源代码文件名
-    logger.c
 )
 
 # 链接 utils 库和 pthread（如果 logger 需要）
